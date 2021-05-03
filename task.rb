@@ -29,7 +29,7 @@ def q4
   sports = ["サッカー", "フットサル", nil, "野球", "バスケ", nil, "バレー"]
 
   # 以下に回答を記載
-  sports.delete(nil)
+  sports.compact!
 
   # 以下は変更しないで下さい
   p sports
@@ -40,11 +40,14 @@ def q5
   array2 = [1, 5, 8, 10]
 
   # 以下に回答を記載
+  require "active_support"
   puts "array1出力結果"
-  p array1.empty?
+  # p array1.empty?
+  puts array1.blank?
   puts "\n"
   puts "array2出力結果"
-  p array2.empty?
+  # p array2.empty?
+  puts array2.blank?
 end
 
 def q6
