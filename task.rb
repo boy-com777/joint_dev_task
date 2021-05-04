@@ -40,14 +40,14 @@ def q5
   array2 = [1, 5, 8, 10]
 
   # 以下に回答を記載
-  require "active_support"
+  # require "active_support"
   puts "array1出力結果"
-  # p array1.empty?
-  puts array1.blank?
+  p array1.empty?
+  # puts array1.blank?
   puts "\n"
   puts "array2出力結果"
-  # p array2.empty?
-  puts array2.blank?
+  p array2.empty?
+  # puts array2.blank?
 end
 
 def q6
