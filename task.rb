@@ -149,13 +149,15 @@ def q15
   data2 = { name: "yamada", hobby: "baseball", role: "normal" }
 
   # 以下に回答を記載
-  puts "data1実行結果"
-  puts "--------------------"
-  p data1.key?(:age)
-  puts ""
-  puts "data2実行結果"
-  puts "--------------------"
-  p data2.key?(:age)
+  puts <<~EOS
+         data1実行結果
+         --------------------
+         #{data1.key?(:age) ? "OK" : "NG"}
+         \n
+         data2実行結果
+         --------------------
+         #{data2.key?(:age) ? "OK" : "NG"}
+       EOS
 end
 
 def q16
@@ -168,10 +170,12 @@ def q16
 
   # 以下に回答を記載
   users.each.with_index(1) do |user, i|
-    puts "#{i}人目"
-    puts "--------------------"
-    puts "私の名前は#{user[:name]}です。年齢は#{user[:age]}歳です。"
-    puts "\n"
+    puts <<~EOS
+           #{i}人目
+           --------------------
+           私の名前は#{user[:name]}です。年齢は#{user[:age]}歳です。
+           \n
+         EOS
   end
 end
 
