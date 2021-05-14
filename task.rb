@@ -215,9 +215,9 @@ class UserQ18
 
   def introduce
     if @age >= 30
-      puts "こんにちは、#{@name}と申します。よろしくお願いいたします。"
+      print "こんにちは、#{@name}と申します。よろしくお願いいたします。"
     else
-      puts "はいさいまいど〜、#{@name}です"
+      print "はいさいまいど〜、#{@name}です"
     end
   end
 end
